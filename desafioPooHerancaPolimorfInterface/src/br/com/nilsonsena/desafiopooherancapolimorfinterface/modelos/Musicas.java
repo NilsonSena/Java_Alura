@@ -33,10 +33,9 @@ public class Musicas extends Audio{
     @Override
     public double getClassificacao() {
         if (getTotalReproducao() >= 2000){
-            setClassificacao(10);
+            return 10;
         }else{
-            setClassificacao(8);
+            return 7;
         }
-        return 0;
     }
 }

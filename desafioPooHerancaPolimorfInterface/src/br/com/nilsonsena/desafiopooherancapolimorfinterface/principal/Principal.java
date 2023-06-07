@@ -2,6 +2,7 @@ package br.com.nilsonsena.desafiopooherancapolimorfinterface.principal;
 
 import br.com.nilsonsena.desafiopooherancapolimorfinterface.modelos.Audio;
 import br.com.nilsonsena.desafiopooherancapolimorfinterface.modelos.Musicas;
+import br.com.nilsonsena.desafiopooherancapolimorfinterface.modelos.MusicasPreferidas;
 import br.com.nilsonsena.desafiopooherancapolimorfinterface.modelos.Podcasts;
 
 public class Principal {
@@ -18,6 +19,8 @@ public class Principal {
         System.out.println(bethoven.getCantor());
         System.out.println(bethoven.getAlbum());
         System.out.println(bethoven.getGenero());
+
+        System.out.println(bethoven.getClassificacao());
 
         for (int i = 0; i < 2000; i++) {
             bethoven.curte();
@@ -41,6 +44,10 @@ public class Principal {
             flow.curte();
         }
 
+        MusicasPreferidas musicasPreferidas = new MusicasPreferidas();
+
+        musicasPreferidas.inclui(flow);
+        musicasPreferidas.inclui(bethoven);
 
         //System.out.println("Mais uma reprodução: " + bethoven.reproduz());
 

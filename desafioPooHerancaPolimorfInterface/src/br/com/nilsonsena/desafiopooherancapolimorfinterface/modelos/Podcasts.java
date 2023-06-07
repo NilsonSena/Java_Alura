@@ -23,11 +23,10 @@ public class Podcasts extends Audio{
 
     @Override
     public double getClassificacao() {
-        if (getTotalCurtidas() >= 500){
-            setClassificacao(10);
+        if (this.getTotalCurtidas() >= 2000){
+            return 9;
         }else{
-            setClassificacao(7);
+            return 8;
         }
-        return 0;
     }
 }
