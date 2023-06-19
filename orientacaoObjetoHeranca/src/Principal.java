@@ -10,8 +10,7 @@ public class Principal {
     public static void main(String[] args) {
         int valor = 555;
 
-        Filme meuFilme = new Filme("O poderoso chefão");
-        meuFilme.setAnoDeLancamento(1970);
+        Filme meuFilme = new Filme("O poderoso chefão", 1970);
         meuFilme.setDuracaoEmMinutos(180);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
@@ -24,9 +23,7 @@ public class Principal {
         System.out.println("Media das Avaliações: " + meuFilme.getTotalAvaliacoes());
         System.out.println(meuFilme.mediaAvaliacoes());
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2000);
+        Serie lost = new Serie("Lost", 2000);
         lost.setTemporadas(10);
         lost.setDuracaoEmMinutos(60);
         lost.setEpisodiosPorTemporada(10);
@@ -36,8 +33,7 @@ public class Principal {
 
         System.out.println("Duração para maratonar serie " + lost.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme("Avatar");
-        outroFilme.setAnoDeLancamento(2023);
+        Filme outroFilme = new Filme("Avatar", 2023);
         outroFilme.setDuracaoEmMinutos(200);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
@@ -60,9 +56,8 @@ public class Principal {
 
         filtro.filtra(episodio);
 
-        Filme filmeDoPaulo = new Filme("Dogville");
+        Filme filmeDoPaulo = new Filme("Dogville", 2003);
         filmeDoPaulo.setDuracaoEmMinutos(200);
-        filmeDoPaulo.setAnoDeLancamento(2003);
         filmeDoPaulo.avalia(10);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
