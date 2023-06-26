@@ -30,6 +30,7 @@ public class Principal {
         lost.setAtiva(false);
         lost.setMinutosPorEpisodio(50);
         lost.exibeFichaTecnica();
+        
 
         System.out.println("Duração para maratonar serie " + lost.getDuracaoEmMinutos());
 
